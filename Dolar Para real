@@ -1,27 +1,19 @@
-/* Conversor de Moedas*/
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
-    float RS, DL, EU, LE;
+    float valorReal , valorDolar;
     
-    printf("\nInforme sua quantidade de dinheiro:\n");
-    scanf("%f", &RS);
+    //    real valorReal, valorDolar
+    // $1 = R$5,30
     
-    DL = RS * 2.40;
     
-    EU = RS * 3.20;
+    printf("Digite o Valor a ser convertido : $ \n ", valorReal);
+    scanf("%f" , &valorReal);
     
-    LE = RS * 3.70;
-    
-    printf("\nVoce possui %7.2f Reais, que equivale ah:\n", RS);
-    
-    printf("\n%7.2f Dolares\n", DL);
-    
-    printf("\n%7.2f Euros\n", EU);
-    
-    printf("\n%7.2f Libra Esterlina\n\n", LE);
-    
-    system("PAUSE");
-    
+    valorDolar = valorReal * 5.3;
+
+    printf("\nValor Convertido R$ : %.2f " , valorDolar  );
+
+   system ("PAUSE");
 }
